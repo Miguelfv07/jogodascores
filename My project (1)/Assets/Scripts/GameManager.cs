@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int corDaVez, acertos, erros;
+    int[] sequencia;
+    [SerializeField] string[] nomes;
+    public GameManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         
